@@ -1,0 +1,10 @@
+.footer {
+  display: block;
+  padding: 20px 0px;
+  background-color: $dark-blue;
+  &__text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: $white;
+  }
+}

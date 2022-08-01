@@ -1,0 +1,36 @@
+.game {
+  display: block;
+  min-height: calc(100vh - 62px);
+  background-color: $light-blue;
+  max-width: 100%;
+  &__top {
+    padding: 30px 0px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $black;
+    margin-bottom: 16px;
+    @include max($bp-sm) {
+      font-size: 24px;
+    }
+  }
+  &__description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $black;
+    margin-bottom: 32px;
+    @include max($bp-sm) {
+      font-size: 14px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+}

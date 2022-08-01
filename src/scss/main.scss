@@ -1,0 +1,20 @@
+@import 'base/reset';
+@import 'mixin/mixin';
+
+
+@import 'custom-select/build/custom-select';
+
+
+@import 'base/variables';
+@import 'base/base';
+
+
+//Components
+
+@import 'components/board';
+@import 'components/button';
+@import 'components/custom-select';
+@import 'components/footer';
+@import 'components/game';
+@import 'components/message';
+@import 'components/progressBox';

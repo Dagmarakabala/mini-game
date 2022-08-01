@@ -1,0 +1,60 @@
+.progressBox {
+  display: grid;
+  grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+  gap: 40px;
+  padding: 0px 0px;
+  max-width: 100%;
+  height: 40px;
+  @include max($bp-lg) {
+    height: 20px;
+  }
+  @include max($bp-sm) {
+    height: 8px;
+    gap: 16px;
+    grid-template-columns: calc(50% - 8px) calc(50% - 8px);
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    @include max($bp-sm) {
+      gap: 2px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    @include max($bp-sm) {
+      gap: 2px;
+    }
+  }
+  &__dot {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    border: 1px solid $black;
+    background: $black;
+    box-shadow: 6px 4px 5px #00000080;
+
+    border-radius: 50%;transition: all 0.2s;
+    &-active {
+      background: radial-gradient(circle, rgb(83, 205, 98) 36%, rgba(34,164,49,1) 69%, rgba(24,154,58,1) 100%);
+      border: 1px solid rgba(24,154,58,1);
+    }
+    @include max($bp-lg) {
+      height: 20px;
+      width: 20px;
+      min-width: 20px;
+      box-shadow: 2px 2px 2px #00000080;
+    }
+    @include max($bp-sm) {
+      height: 8px;
+      width: 8px;
+      min-width: 8px;
+      box-shadow: 2px 2px 2px #00000030;
+    }
+  }
+}

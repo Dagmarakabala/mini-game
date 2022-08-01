@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  width: max-content;
+  padding: 10px 30px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+  background-color: $other-green;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s linear;
+  &:hover {
+    color: $black;
+    background-color: $green;
+  }
+}

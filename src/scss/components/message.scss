@@ -1,0 +1,39 @@
+.message {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: $white;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 100px 0px #00000080;
+  transition: all 0.2s linear;
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $black;
+    margin-bottom: 16px;
+    @include max($bp-sm) {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $black;
+    margin-bottom: 8px;
+    @include max($bp-sm) {
+      font-size: 14px;
+    }
+  }
+  &__smallText {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $black;
+  }
+}
